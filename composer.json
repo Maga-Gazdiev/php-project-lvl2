@@ -1,0 +1,17 @@
+{
+    "name": "hexlet/code",
+    "description": "php-progect-lvl2",
+    "license": "MIT",
+    "bin": ["bin/gendiff"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        },
+        "files": [
+      ]
+    },
+    "require": {
+        "docopt/docopt": "^1.0"
+    }
+}
