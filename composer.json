@@ -9,9 +9,14 @@
             "Hexlet\\Code\\": "src/"
         },
         "files": [
+            "src/Differ.php"
       ]
     },
     "require": {
-        "docopt/docopt": "^1.0"
+        "docopt/docopt": "^1.0",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.7"
     }
 }
