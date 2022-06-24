@@ -29,8 +29,8 @@ DOCOPT;
 
 $args = Docopt::handle($doc, array('version'=>' GenDiff 1.0'));
 
-$firstFile = $args['<./tests/fixtures/file1.json>'];
-$secondFile = $args['<./tests/fixtures/file2.json>'];
+$firstFile = $args['<file1.json>'];
+$secondFile = $args['<file2.json>'];
 $format = $args['--format'];
 
 print_r(genDiff($firstFile, $secondFile, $format));

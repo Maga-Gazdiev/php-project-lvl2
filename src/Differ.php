@@ -12,9 +12,9 @@ function keys($file){
       return $result;
     }
     
-    function gendiff($firstFile, $secondFile, $format = "fmt"){
-    $json1 = (keys($firstFile));
-    $json2 = (keys($secondFile));
+    function gendiff($firstFile, $secondFile, $format = "stylish"){
+    $json1 = keys($firstFile);
+    $json2 = keys($secondFile);
     $stac = [];
     $stac1 = [];
     foreach($json1 as $keys1 => $item1){
@@ -49,5 +49,5 @@ function keys($file){
         $implode = implode("\n", $merge);
      }
     } 
-    return($implode);
+    return $implode;
     }
