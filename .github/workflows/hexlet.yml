@@ -9,7 +9,6 @@ jobs:
 
             steps:
               - uses: actions/checkout@v2
-              - name: PHP
               - name: lint
                 run : make lint     
               - name: test
