@@ -1,0 +1,19 @@
+name: PHP CI
+
+on:
+  - push
+
+jobs:
+    build:
+            runs-on: ununtu-latest
+
+            steps:
+              - name:  lint
+                run : make lint
+                
+              - name: test
+                run : make test
+                
+              - name: fix
+                run : make fix
+              
