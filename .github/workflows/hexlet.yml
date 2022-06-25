@@ -1,7 +1,9 @@
 name: PHP CI
 
 on:
-  - push
+  push:
+    branches:
+      - master
 
 jobs:
     build:
