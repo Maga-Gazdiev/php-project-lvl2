@@ -2,7 +2,9 @@
 
 namespace new\space;
 
-function keys(string $file): array
+use Symfony\Component\Yaml\Yaml;
+
+function keys($file)
 {
     $str = file_get_contents($file);
     $json = (json_decode($str));
@@ -12,10 +14,19 @@ function keys(string $file): array
     }
     return $result;
 }
+
+function typp($file){
+if(substr($file, -4) === 'json'){
+  return keys($file);
+}elseif(substr($file, -3) === 'yml' || substr($file, -4) === 'yaml'){
+  return Yaml::parseFile($file);
+}
+}
+
 function gendiff($firstFile, $secondFile, $format = "stylish")
 {
-    $json1 = keys($firstFile);
-    $json2 = keys($secondFile);
+    $json1 = typp($firstFile);
+    $json2 = typp($secondFile);
     $stac = [];
     $stac1 = [];
     foreach ($json1 as $keys1 => $item1) {
