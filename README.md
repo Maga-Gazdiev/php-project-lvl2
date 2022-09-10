@@ -50,4 +50,4 @@ make install
 
 ### Рекурсивное сравнение Json. Вывод результата в формате json
 
-[![asciicast](https://asciinema.org/a/BZ8d7heHYOKybdWUskQ4ujj1E.svg)](https://asciinema.org/a/BZ8d7heHYOKybdWUskQ4ujj1E)
+[![asciicast](https://asciinema.org/a/BZ8d7heHYOKybdWUskQ4ujj1E.svg)](https://asciinema.org/a/BZ8d7heHYOKybdWUskQ4ujj1E)# php-project-lvl2
