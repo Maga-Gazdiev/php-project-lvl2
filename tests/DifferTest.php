@@ -9,7 +9,6 @@ use function Differ\Differ\genDiff;
 
 class DifferTest extends TestCase
 {
-
     /**
      * @param string $fileName
      * @return string
